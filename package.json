@@ -1,0 +1,14 @@
+{
+  "name": "webapi-assignment1",
+  "version": "1.0.0",
+  "description": "wad ass1 iz",
+  "main": "Yourname_ModuleName.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "isaac koh",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
