@@ -23,8 +23,7 @@ module.exports.books = {
             db.books.push({
                 name: newBook.name,
                 author: newBook.author,
-                quantity: newBook.quantity,
-                categoryId: newBook.categoryId,
+                quantity: newBook.quantity
             });
             return `Successfully created: '${newBook.name}' x${newBook.quantity}`;
         }
@@ -34,11 +33,6 @@ module.exports.books = {
     searchName(name) {
         // search regardless of case
         return db.books.filter(book => book.name.toLowerCase().includes(name.toLowerCase()));
-    },
-
-    // search book by category
-    searchCategory(categoryId) {
-        return db.books.filter(book => book.categoryId == categoryId);
     },
 
     // get all borrowed records
@@ -121,8 +115,11 @@ module.exports.books = {
         if (user==undefined) return { message: "Failed - User does not exist." };
         if (book==undefined) return { message: "Failed - Book does not exist." };
 
-        // check if quantity is too high
+        // check borrow record exists
         let borrowIdx = db.borrows.findIndex(b => b.userId==userId && b.bookName==bookName);
+        if (borrowIdx < 0) return { message: "Failed - User has not borrowed this book." };
+
+        // check if quantity is too high
         if (db.borrows[borrowIdx].quantity < quantity) {
             return { message: "Failed - User has not borrowed this many books to return." };
 

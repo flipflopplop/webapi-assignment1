@@ -2,74 +2,62 @@ let books = [
     {
         name: "The Great Adventure",
         author: "Emily Collins",
-        quantity: 3,
-        categoryId: 2
+        quantity: 3
     },
     {
         name: "The Secret Garden",
         author: "Oliver Thompson",
-        quantity: 1,
-        categoryId: 3
+        quantity: 1
     },
     {
         name: "The Lost Treasure",
         author: "Sophia Anderson",
-        quantity: 4,
-        categoryId: 1
+        quantity: 4
     },
     {
         name: "The Mystery of Shadows",
         author: "Jacob Mitchell",
-        quantity: 2,
-        categoryId: 4
+        quantity: 2
     },
     {
         name: "The Enchanted Forest",
         author: "Isabella Turner",
-        quantity: 5,
-        categoryId: 2
+        quantity: 5
     },
     {
         name: "The Forgotten Kingdom",
         author: "Ethan Wilson",
-        quantity: 3,
-        categoryId: 3
+        quantity: 3
     },
     {
         name: "The Hidden Path",
         author: "Ava Roberts",
-        quantity: 1,
-        categoryId: 1
+        quantity: 1
     },
     {
         name: "The Time Traveler's Diary",
         author: "Liam Thompson",
-        quantity: 4,
-        categoryId: 4
+        quantity: 4
     },
     {
         name: "The Magical Potion",
         author: "Mia Adams",
-        quantity: 2,
-        categoryId: 2
+        quantity: 2
     },
     {
         name: "The Secret Code",
         author: "Noah Davis",
-        quantity: 5,
-        categoryId: 3
+        quantity: 5
     },
     {
         name: "The Haunted Mansion",
         author: "Emma Wilson",
-        quantity: 3,
-        categoryId: 1
+        quantity: 3
     },
     {
         name: "The Lost Civilization",
         author: "Alexander Turner",
-        quantity: 1,
-        categoryId: 4
+        quantity: 1
     }
 ];
 
@@ -155,29 +143,6 @@ let borrows = [
         bookName: "The Enchanted Forest",
         quantity: 1
     }
-]
-
-let categories = [
-    {
-        id: 1,
-        name: 'Fiction'
-    },
-    {
-        id: 2,
-        name: 'Non-fiction'
-    },
-    {
-        id: 3,
-        name: 'Mystery/Thriller'
-    },
-    {
-        id: 4,
-        name: 'Nature'
-    },
-    {
-        id: 5,
-        name: 'History'
-    },
 ]
 
 module.exports.books = books;
