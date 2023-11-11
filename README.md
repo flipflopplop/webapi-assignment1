@@ -1,13 +1,11 @@
-# Isaac Library Module
+# Isaac's Library Module
 
 This node module provides essential functionality for a library book borrowing service. With this module, book readers can create accounts and borrow books with ease.
 
 ## Installation
 Before starting, make sure you have [downloaded and installed Node.js](https://nodejs.org/en/download/). This node module has been tested with Node.js v16.17.0.
 
-If you are starting from a brand new project, create a `package.json` file for your application with the `npm init` command.
-
-Then, install the module dependencies using the `npm install` command:
+Then, install the module dependencies with the `npm install` command:
 ```
 npm install
 ```
@@ -15,7 +13,7 @@ npm install
 ## Database System
 The database for this module is simulated with a series of arrays, stored in the `database.js` file.
 
-> Please do not delete this file as it is essential for the module to function.
+> Please do not delete this file as it is essential for this module to function.
 
 ## Testing
 The file `sample.js` contains the full list of available functions with working examples provided by this library module. You can test out the module with this file with `npm test`:
@@ -101,7 +99,7 @@ console.log(JSON.stringify(newUser, null, 2));
 - Passwords have to be at least 8 characters long, containing an alphabet, number and symbol
 
 ### 2. Log in
-Authenticates user based on username and password. Returns an array containing a message and an `object` containing the user data if provided credentials are valid.
+Authenticates user based on username and password. Returns an array containing a message and an `object` containing the user data if the provided credentials are valid.
 ``` javascript
 const loginUser = library.users.login('newUser@gmail.com', 'p@ssw0rd');
 console.log(JSON.stringify(loginUser, null, 2));
