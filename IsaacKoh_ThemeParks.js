@@ -53,5 +53,11 @@ module.exports.parks = {
     searchFeeRange(min, max) {
         return db.parks.filter(park => park.entry_fee >= min && park.entry_fee <= max);
     }
+}
 
+module.exports.user = {
+    new(userData) {
+        // check if username exists
+        db.users.
+    }
 }
