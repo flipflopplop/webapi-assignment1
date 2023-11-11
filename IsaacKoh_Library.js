@@ -12,6 +12,11 @@ module.exports.books = {
 
     // Explain what function B does
     add(newBook) {
+        // check if name, author and quantity are given
+        if (newBook.name==undefined) return { message: "Failed to add book(s) - Book name required." };
+        if (newBook.author==undefined) return { message: "Failed to add book(s) - Book author required." };
+        if (newBook.quantity==undefined) return { message: "Failed to add book(s) - Book quantity required." };
+
         // check if book name exists
         if (db.books.find(b => b.name == newBook.name)) {
             // increment quantity of found book
@@ -141,15 +146,20 @@ module.exports.books = {
 module.exports.users = {
     // register new user
     register(newUser) {
+        // check that fields are given
+        if (newUser.email==undefined) return { message: "Failed - Email is required." };
+        if (newUser.username==undefined) return { message: "Failed - Username is required." };
+        if (newUser.password==undefined) return { message: "Failed - Password is required." };
+
         // check that username is unique
-        if (db.users.find(u => u.email == newUser.email)) return "Registration Failed - Sorry, this email has already been taken.";
+        if (db.users.find(u => u.email == newUser.email)) return { message: "Failed - Sorry, this email has already been taken." };
 
         // check password strength
         const regex = new RegExp("^(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[#?!@$%^&*_-]).{8,}$");
-        if (!regex.test(newUser.password)) return "Registration Failed - Password strength too weak.";
+        if (!regex.test(newUser.password)) return { message: "Failed - Password strength is too weak." };
 
         // validate username
-        if (newUser.username.includes(' ')) return "Registration Failed - Username must not include whitespaces.";
+        if (newUser.username.includes(' ')) return { message: "Failed - Username must not have whitespaces." };
         
         // store user
         db.users.push({
@@ -195,7 +205,7 @@ module.exports.users = {
         }
 
         // invalid email, or password
-        return { message: "Login Failed - Invalid credentials provided."};
+        return { message: "Failed - Invalid credentials provided."};
     },
 
     // get user by id
