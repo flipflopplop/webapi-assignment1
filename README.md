@@ -17,8 +17,8 @@ The database for this module is simulated with a series of arrays, stored in the
 
 > Please do not delete this file as it is essential for the module to function.
 
-## Test
-The file `sample.js` includes the full list of available functions with working examples provided by this library module. You can test out the module with this file with `npm test`:
+## Testing
+The file `sample.js` contains the full list of available functions with working examples provided by this library module. You can test out the module with this file with `npm test`:
 ```
 npm test
 ```
