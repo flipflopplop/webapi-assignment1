@@ -9,11 +9,15 @@ Install iz-library with the `npm install` command:
 ```
 npm install iz-library
 ```
-> If you have cloned this module from github, install the module dependencies with the `npm install` command.
+> If you have cloned this module from GitHub, install the module dependencies with the `npm install` command.
 
 # Getting Started
 Start by requiring the module in your project:
+``` javascript
+const library = require('iz-library')
+```
 
+If you have cloned this module from GitHub, include the module with require as follows:
 ``` javascript
 const library = require('./IsaacKoh_Library');
 ```
