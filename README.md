@@ -10,17 +10,6 @@ Then, install the module dependencies with the `npm install` command:
 npm install
 ```
 
-## Database System
-The database for this module is simulated with a series of arrays, stored in the `database.js` file.
-
-> Please do not delete this file as it is essential for this module to function.
-
-## Testing
-The file `sample.js` contains the full list of available functions with working examples provided by this library module. You can test out the module with this file with `npm test`:
-```
-npm test
-```
-
 # Getting Started
 Start by requiring the module in your project:
 

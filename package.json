@@ -8,7 +8,7 @@
     "uuid": "^9.0.1"
   },
   "scripts": {
-    "test": "node sample"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "isaac koh",
   "license": "ISC"
