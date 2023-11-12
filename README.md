@@ -5,10 +5,11 @@ This node module provides essential functionality for a library book borrowing s
 ## Installation
 Before starting, make sure you have [downloaded and installed Node.js](https://nodejs.org/en/download/). This node module has been tested with Node.js v16.17.0.
 
-Then, install the module dependencies with the `npm install` command:
+Install iz-library with the `npm install` command:
 ```
-npm install
+npm install iz-library
 ```
+> If you have cloned this module from github, install the module dependencies with the `npm install` command.
 
 # Getting Started
 Start by requiring the module in your project:

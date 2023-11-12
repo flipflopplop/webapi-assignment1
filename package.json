@@ -10,6 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flipflopplop/webapi-assignment1.git"
+  },
   "author": "isaac koh",
   "license": "ISC"
 }
