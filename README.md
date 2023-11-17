@@ -93,7 +93,7 @@ console.log(JSON.stringify(newUser, null, 2));
 - Passwords have to be at least 8 characters long, containing an alphabet, number and symbol
 
 ### 2. Log in
-Authenticates user based on username and password. Returns an array containing a message and an `object` containing the user data if the provided credentials are valid.
+Authenticates user based on their email and password. Returns an array containing a message and an `object` containing the user data if the provided credentials are valid.
 ``` javascript
 const loginUser = library.users.login('newUser@gmail.com', 'p@ssw0rd');
 console.log(JSON.stringify(loginUser, null, 2));

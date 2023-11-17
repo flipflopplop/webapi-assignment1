@@ -1,6 +1,6 @@
 {
   "name": "iz-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fake library API for WAD Assignment 1",
   "main": "IsaacKoh_Library.js",
   "dependencies": {
